@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -8,21 +8,32 @@
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  flex-wrap: wrap; /* 換行 */
+  justify-content: center; /* 水平置中 */
+  gap: 20px; /* 卡片間距 */
+  margin: 0 auto; /* 置中 */
+  max-width: 100%; /* 最大寬度 */
+  overflow: visible; /* 確保內容不被隱藏 */
 }
 
 .container .student {
-  border: solid 1px #212121;
-  border-radius: .3rem;
-  width: 15rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1% 2%;
+  width: 20%; /* 四個一排，大約 23% 寬度 */
+  border: 1px solid #e0a7db; /* 邊框 */
+  border-radius: 10px; /* 圓角 */
+  padding: 20px; /* 內距 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 陰影 */
+  background-color: rgba(244, 227, 235, 0.8); /* 背景顏色 */
+  text-align: center; /* 文字置中 */
+  color: #5c0d0d; /* 深酒紅色文字 */
 }
 
-
 .container .student h1 {
-  font-size: 1.25rem;
+  margin: 30px 0; /* 調整段落間距 */
+  font-size: 25px; /* 字體大小 */
+}
+
+.container .student p {
+  margin: 10px 0; /* 每一行之間增加外邊距 */
+  line-height: 1.5; /* 增加行高，讓文字更疏散 */
+  font-size: 1.4rem; /* 調整字體大小（可選） */
 }

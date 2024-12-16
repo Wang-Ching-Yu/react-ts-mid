@@ -1,0 +1,31 @@
+.homepage {
+    height: 100vh; /* 全畫面高度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fdf5e6; /* 淡色背景 */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #5c0d0d; /* 深酒紅色 */
+  }
+  
+  .go-app-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #d8bfd8; /* 淡紫色 */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .go-app-button:hover {
+    background-color: #c3a3c3; /* 深一點的紫色 */
+  }
+  

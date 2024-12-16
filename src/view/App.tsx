@@ -18,6 +18,7 @@ function App() {
     if (!cache.current) {
       cache.current = true;
       asyncGet(api.findAll).then((res: resp<Array<Student>>) => {
+        console.log("API 回傳:", res)
         if (res.code == 200) {
           setStudents(res.body)
         }

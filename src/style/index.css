@@ -15,8 +15,25 @@
 
 body {
   margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #d8bfd8, #c3a3c3, #a38fa3);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: #5a0b4d; /* 預設文字顏色 */
+  text-align: center;
+  overflow-y: auto; /* 啟用垂直滾動條 */
+}
+
+h1 {
+  font-size: 3rem;
+  color: #5a0b4d; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 1.2rem;
+  color: #5a0b4d; /* 深酒紅色 */
 }
