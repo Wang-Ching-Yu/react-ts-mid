@@ -1,0 +1,86 @@
+/* AddPage.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .add-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直置中 */
+    align-items: center; /* 水平置中 */
+    height: 100vh; /* 填滿整個視窗高度 */
+    text-align: center;
+    transform: translateY(-10%); /* 上移整體內容 */
+  }
+  
+  .add-title {
+    font-size: 4rem;
+    color: #5a0b4d;
+    margin-bottom: 20px;
+  }
+  
+  .add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    width: 450px; /* 固定寬度 */
+    margin-bottom: 15px;
+  }
+  
+  .form-row label {
+    font-size: 1.2rem;
+    color: #5a0b4d;
+  }
+  
+  .form-row input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #e0a7db;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-row input::placeholder {
+    color: #c3a3c3; /* 輸入範例文字顏色 */
+    font-style: italic;
+  }
+
+  input:focus {
+    outline: none; /* 移除預設的外框線 */
+    border: 2px solid #733468; /* 設定深紫色邊框 */
+    box-shadow: 0 0 5px rgba(90, 11, 77, 0.5); /* 添加輕微陰影增強效果 */
+  }
+  
+  
+  .submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #5a0b4d;
+    background-color: #e1b7e1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #9e369e;
+    color: white;
+  }
+
+  input.required-input::placeholder {
+    color: #a30d3f !important; /* 強制使用紫紅色 */
+    font-weight: bold;
+}
+  

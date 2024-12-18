@@ -1,31 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* 禁止滑動 */
+}
+
 .homepage {
-    height: 100vh; /* 全畫面高度 */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #fdf5e6; /* 淡色背景 */
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #5c0d0d; /* 深酒紅色 */
-  }
-  
-  .go-app-button {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: #d8bfd8; /* 淡紫色 */
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .go-app-button:hover {
-    background-color: #c3a3c3; /* 深一點的紫色 */
-  }
-  
+  display: flex; /* 使用 flexbox 來置中 */
+  flex-direction: column; /* 讓內容垂直排列 */
+  justify-content: center; /* 垂直置中 */
+  align-items: center; /* 水平置中 */
+  height: 100vh; /* 讓 container 填滿整個視窗高度 */
+  text-align: center;
+}
+
+.title {
+  font-size: 5rem; /* 調大標題字體 */
+  color: #5a0b4d;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px; /* 與按鈕的距離 */
+  margin-top: -10rem; /* 向上移動 */
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu-button {
+  background-color: #d8bfd8;
+  color: #5a0b4d;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+  background-color: #c3a3c3; /* 按鈕 hover 顏色 */
+  color: #fff;
+}
+
+.menu-options {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  background-color: rgba(244, 227, 235, 0.9);
+  border: 1px solid #e0a7db;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu-options li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-options li:hover {
+  background-color: #c3a3c3;
+  color: #fff;
+}

@@ -1,0 +1,84 @@
+/* 全局樣式設定 */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* 固定畫面，禁止滾動 */
+    background-color: #f3d9f3; /* 背景顏色，保留視覺一致性 */
+  }
+  
+  /* 容器設定：置中且固定位置 */
+  .delete-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直置中 */
+    align-items: center; /* 水平置中 */
+    height: 100vh; /* 填滿視窗高度 */
+    position: relative;
+    transform: translateY(-10%); /* 向上移動 10% */
+  }
+  
+  /* 標題樣式 */
+  .delete-title {
+    font-size: 3rem;
+    color: #5a0b4d;
+    margin-bottom: 20px;
+  }
+  
+  /* 表單樣式 */
+  .delete-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  /* 帳號和輸入框在同一行 */
+  .form-row {
+    display: flex;
+    align-items: center; /* 垂直對齊 */
+    justify-content: center; /* 水平居中 */
+    gap: 10px; /* 標籤與輸入框之間的間距 */
+  }
+  
+  /* 標籤樣式 */
+  .delete-form label {
+    font-size: 1.2rem;
+    color: #5a0b4d;
+  }
+  
+  /* 輸入框樣式 */
+  .delete-form input {
+    padding: 10px;
+    width: 300px; /* 輸入框固定寬度 */
+    border: 1px solid #e0a7db;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .delete-form input::placeholder {
+    color: #a30d3f; /* 紫紅色必填標示 */
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  /* 按鈕樣式 */
+  .delete-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #5a0b4d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #7a1d5e;
+  }
+  
+  
